@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.shobhitpuri.custombuttons:google-signin-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-signin-1.0.0.aar/26c0857e40abef7897e065aacf25a4d5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/google-signin-1.0.0.aar/26c0857e40abef7897e065aacf25a4d5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shobhitpuri.custombuttons/google-signin/1.0.0/38f5fda7b88c1bdf77ec0b74e13dbe7229e1ab/google-signin-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

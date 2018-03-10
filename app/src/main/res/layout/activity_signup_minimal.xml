@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:clickable="true"
+    tools:context="com.babble.chatMessenger.SigninMinimal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="First name"
+            android:backgroundTint="@color/focus_tint_list"
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textColorHint="#BDBDBD"
+            android:id="@+id/fname"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Last name"
+            android:backgroundTint="@color/focus_tint_list"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textColorHint="#BDBDBD"
+            android:id="@+id/lname"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="20dp"
+            android:hint="Email"
+            android:backgroundTint="@color/focus_tint_list"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:textColorHint="#BDBDBD"
+            android:id="@+id/email"
+            android:layout_marginRight="20dp"/>
+        <EditText
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#BDBDBD"
+            android:backgroundTint="@color/focus_tint_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/login_sign_in_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:hapticFeedbackEnabled="true"
+            android:background="#2196f3"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="44px"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="CREATE ACCOUNT"
+            android:bottomRightRadius="5dp"
+            android:bottomLeftRadius="5dp"
+            android:topLeftRadius="5dp"
+            android:layout_marginBottom="15dp"
+            android:topRightRadius="5dp"
+            android:textStyle="bold"/>
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:textAlignment="textStart"
+            android:text="SIGN IN WITH GOOGLE"
+            app:isDarkTheme="false" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signinlink"
+            android:text=" SIGN IN"
+            android:textSize="14sp"
+            android:textColor="#2196f3"
+            android:hapticFeedbackEnabled="true" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

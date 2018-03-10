@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="#fafafa"
+    android:id="@+id/relativeLayout">
+
+    <com.babble.chatMessenger.NonSwipeableViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/carouselText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="260dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:layout_height="100dp">
+    </com.babble.chatMessenger.NonSwipeableViewPager>
+
+    <com.babble.chatMessenger.NonSwipeableViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/carouselImage"
+        android:layout_width="260dp"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp">
+    </com.babble.chatMessenger.NonSwipeableViewPager>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_below="@id/carouselImage">
+
+
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:layout_width="280dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="60dp"
+            android:textAlignment="textStart"
+            android:text="SIGN IN WITH GOOGLE"
+            app:isDarkTheme="false" />
+        <Button
+            android:id="@+id/login_sign_in_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:hapticFeedbackEnabled="true"
+            android:background="#2196f3"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:textSize="44px"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:bottomRightRadius="5dp"
+            android:bottomLeftRadius="5dp"
+            android:topLeftRadius="5dp"
+            android:topRightRadius="5dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noAccount"
+            android:text="Already have an account?"
+            android:textSize="14sp"
+/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signinlink"
+            android:text=" Sign in"
+            android:textSize="14sp"
+            android:textColor="#2196f3"
+            android:hapticFeedbackEnabled="true"
+            android:layout_toRightOf="@+id/noAccount"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
