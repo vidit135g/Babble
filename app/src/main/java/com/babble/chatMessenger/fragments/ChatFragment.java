@@ -1,6 +1,7 @@
 package com.babble.chatMessenger.fragments;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.widget.ListView;
@@ -48,6 +50,8 @@ public class ChatFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Chat Activity");
+        Typeface custom_font1 = Typeface.createFromAsset(getActivity().getAssets(),  "fonts/fprimary.ttf");
+        Typeface custom_font2 = Typeface.createFromAsset(getActivity().getAssets(),  "fonts/fbold.ttf");
         Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT+1:00"));
         Date currentLocalTime = cal.getTime();
         DateFormat date = new SimpleDateFormat("HH:mm a");
@@ -75,6 +79,7 @@ public class ChatFragment extends Fragment {
 
         ListView listView = (ListView) getView().findViewById(R.id.chatlisting);
         listView.setAdapter(customChatAdapter);
+
     }
 
 

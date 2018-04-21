@@ -7,6 +7,7 @@ package com.babble.chatMessenger;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -19,10 +20,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class CustomChatAdapter extends ArrayAdapter<ChatList>{
+    private Typeface tf;
+    private Typeface pf;
     private static final String LOG_TAG = CustomChatAdapter.class.getSimpleName();
 
     public CustomChatAdapter(Activity context, ArrayList<ChatList> chatList) {
         super(context,0, chatList);
+        this.tf= Typeface.createFromAsset(context.getAssets(),"fonts/fprimary.ttf");
+        this.pf= Typeface.createFromAsset(context.getAssets(),"fonts/fbold.ttf");
     }
 
 
@@ -45,6 +50,10 @@ public class CustomChatAdapter extends ArrayAdapter<ChatList>{
         convTextView.setText(chatList.getUserConv());
         timeTextView.setText(chatList.getChatTime());
         avatarIocn.setImageResource(chatList.getAvatarResourceId());
+
+        nameTextView.setTypeface(pf);
+        convTextView.setTypeface(tf);
+        timeTextView.setTypeface(pf);
         return listItemView;
     }
 }

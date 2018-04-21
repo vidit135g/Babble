@@ -106,19 +106,15 @@ public class SplashActivity extends AppCompatActivity {
 
         //register intent
 
-        signinLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(SplashActivity.this,SigninMinimal.class);
-                startActivity(intent);
-            }
-        });
+
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SplashActivity.this,SignupMinimal.class);
+                Intent intent=new Intent(SplashActivity.this,SigninMinimal.class);
                 startActivity(intent);
+
+
 
             }
         });

@@ -1,14 +1,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="80dp"
-    android:layout_height="80dp"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
     android:layout_centerHorizontal="true"
     android:background="@drawable/circle">
 
     <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:fitsSystemWindows="true"
         android:adjustViewBounds="true"
         android:layout_gravity="center"
-        android:src="@drawable/camera" />
+        android:src="@drawable/photos" />
 </FrameLayout>

@@ -33,14 +33,6 @@
         android:gravity="center"
         android:layout_below="@id/carouselImage">
 
-
-        <com.shobhitpuri.custombuttons.GoogleSignInButton
-            android:layout_width="280dp"
-            android:layout_marginBottom="20dp"
-            android:layout_height="60dp"
-            android:textAlignment="textStart"
-            android:text="SIGN IN WITH GOOGLE"
-            app:isDarkTheme="false" />
         <Button
             android:id="@+id/login_sign_in_button"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -51,9 +43,10 @@
             android:textSize="44px"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
+            android:text="AGREE AND CONTINUE"
             android:bottomRightRadius="5dp"
             android:bottomLeftRadius="5dp"
+            android:layout_marginTop="50dp"
             android:topLeftRadius="5dp"
             android:topRightRadius="5dp"
             android:textStyle="bold"/>
@@ -67,18 +60,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/noAccount"
-            android:text="Already have an account?"
+            android:text="Tap Agree and Continue to accept the "
             android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
 />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/signinlink"
-            android:text=" Sign in"
+            android:text="Babble's Terms of Service and Privacy Policy"
             android:textSize="14sp"
             android:textColor="#2196f3"
+            android:textAlignment="center"
             android:hapticFeedbackEnabled="true"
-            android:layout_toRightOf="@+id/noAccount"/>
+            android:layout_below="@+id/noAccount"/>
         </RelativeLayout>
     </LinearLayout>
 

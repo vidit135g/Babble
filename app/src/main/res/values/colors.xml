@@ -44,4 +44,9 @@
     <color name="material_drawer_dark_selected">#202020</color>
     <color name="material_drawer_dark_selected_text">@color/material_drawer_primary</color>
     <color name="material_drawer_dark_header_selection_text">#FFF</color>
+
+    <color name="profilePrimary">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="starblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
 </resources>

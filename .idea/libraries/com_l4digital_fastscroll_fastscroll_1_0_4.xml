@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.l4digital.fastscroll:fastscroll-1.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fastscroll-1.0.4.aar/9d8c864360fa2b78f2c46fa8d6b19726/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fastscroll-1.0.4.aar/9d8c864360fa2b78f2c46fa8d6b19726/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.l4digital.fastscroll/fastscroll/1.0.4/9496cb38bc84101696e907b260e30e108a7dd345/fastscroll-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

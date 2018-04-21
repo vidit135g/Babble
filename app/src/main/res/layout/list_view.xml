@@ -5,8 +5,7 @@
     android:orientation="horizontal"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:paddingTop="9.5dp"
-    android:paddingRight="15dp"
-    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?selectableItemBackground"
     android:paddingLeft="15dp"
     >
 
@@ -35,8 +34,9 @@
             android:layout_below="@+id/username"
             android:layout_marginTop="1dp"
             android:id="@+id/conv"
-            android:textColor="#212121"
-            android:textSize="14sp"
+            android:textColor="#2196f3"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -44,16 +44,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ctime"
-            android:textColor="@color/material_drawer_primary"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
             android:textSize="12sp"
             android:layout_alignParentRight="true"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_below="@+id/conv"
-            android:layout_height="1dp"
-            android:layout_marginTop="19dp"
-            android:background="#c0c0c0"/>
+            android:layout_height="0.25dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="10dp"
+            android:background="#BDBDBD"/>
 
     </RelativeLayout>
 </LinearLayout>
